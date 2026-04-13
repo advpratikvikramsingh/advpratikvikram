@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Adv. Pratik Vikram Singh</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia;
+    text-align: center;
+    color: gold;
+}
+
+/* NAVBAR */
+.menu {
+    background: black;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+.menu a {
+    color: gold;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* HERO SECTION */
+.container {
+    background: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+}
+
+/* MAIN BOX */
+.box {
+    border: 2px solid gold;
+    padding: 30px;
+    display: inline-block;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.85);
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* BUTTONS */
+button {
+    padding: 10px 20px;
+    margin: 15px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.call {
+    background: gold;
+}
+
+.whatsapp {
+    background: #25D366;
+}
+
+/* SECTIONS */
+.section {
+    background: black;
+    padding: 50px 20px;
+}
+
+.section h2 {
+    color: gold;
+}
+
+/* CONTACT FORM */
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.send {
+    background: gold;
+    padding: 10px 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+<div class="menu">
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<!-- HERO -->
+<div class="container">
+    <div class="box">
+        <h1>Adv. Pratik Vikram Singh</h1>
+        <h3>Advocate, High Court, Lucknow Bench</h3>
+
+        <p>Mobile: +91 8299436499</p>
+        <p>Alternate: +91 7800043700</p>
+
+        <a href="tel:8299436499">
+            <button class="call">📞 Call Now</button>
+        </a>
+
+        <a href="https://wa.me/918299436499" target="_blank">
+            <button class="whatsapp">💬 WhatsApp</button>
+        </a>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<div class="section" id="about">
+    <h2>About</h2>
+    <p>
+        Adv. Pratik Vikram Singh is a practicing advocate at the High Court, Lucknow Bench.
+        Specializing in criminal law, civil disputes, and High Court litigation,
+        he provides professional, ethical, and result-oriented legal services.
+    </p>
+
+    <h2>Practice Areas</h2>
+    <p>
+        Criminal Law | Civil Cases | Property Disputes | High Court Matters | Legal Consultation
+    </p>
+</div>
+
+<!-- CONTACT -->
+<div class="section" id="contact">
+    <h2>Contact</h2>
+
+    <p>📞 +91 8299436499 / +91 7800043700</p>
+    <p>📧 advpratikvikramsingh@gmail.com</p>
+    <p>📍 B-10, Apoorva Vihar, Indira Nagar, Lucknow - 226028</p>
+
+    <!-- GOOGLE MAP -->
+    <iframe src="https://maps.google.com/maps?q=indira%20nagar%20lucknow&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    width="90%" height="300"></iframe>
+
+    <!-- FORM -->
+    <br><br>
+    <input type="text" placeholder="Your Name"><br>
+    <input type="email" placeholder="Your Email"><br>
+    <textarea placeholder="Your Message"></textarea><br>
+    <button class="send">Send Message</button>
+
+</div>
+
+</body>
+</html>
