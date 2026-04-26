@@ -6,11 +6,9 @@
 
 <title>Adv. Pratik Vikram Singh | Advocate High Court Lucknow Bench</title>
 
-<meta name="description" content="Adv. Pratik Vikram Singh, Advocate High Court Lucknow Bench. Criminal, Civil, Property, Bail and High Court legal services in Lucknow.">
-
-<meta name="keywords" content="Advocate Lucknow, High Court Lawyer Lucknow, Criminal Lawyer Lucknow, Civil Lawyer Lucknow, Pratik Vikram Singh">
-
-<link rel="canonical" href="https://advpratikvikramsingh.github.io/advpratikvikram/">
+<meta name="description" content="Advocate Pratik Vikram Singh - High Court Lucknow Bench. Criminal, Civil, Bail, Property, Legal Consultation. Contact Now.">
+<meta name="keywords" content="Advocate Lucknow, High Court Lawyer Lucknow, Bail Lawyer, Civil Lawyer, Criminal Lawyer, Pratik Vikram Singh">
+<meta name="author" content="Adv. Pratik Vikram Singh">
 
 <style>
 *{
@@ -18,204 +16,235 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 scroll-behavior:smooth;
+font-family:Georgia, serif;
 }
 
 body{
-font-family:Georgia,serif;
-background:#000;
-color:#fff;
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:'';
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(135deg,#000,#111,#1a1200,#000);
+background-size:400% 400%;
+animation:bgmove 12s ease infinite;
+z-index:-2;
+}
+
+@keyframes bgmove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 }
 
 header{
-position:fixed;
+position:sticky;
 top:0;
-width:100%;
+z-index:999;
+background:rgba(0,0,0,0.92);
 padding:18px;
-background:rgba(0,0,0,0.8);
-backdrop-filter:blur(10px);
-text-align:center;
-z-index:1000;
 border-bottom:1px solid gold;
+text-align:center;
 }
 
 header a{
 color:gold;
 text-decoration:none;
 margin:0 18px;
-font-size:20px;
+font-size:22px;
 font-weight:bold;
+transition:.3s;
+}
+
+header a:hover{
+color:white;
+}
+
+section{
+padding:60px 7%;
 }
 
 .hero{
-min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-padding:100px 30px 40px;
-background:linear-gradient(135deg,#000,#111,#1a1a1a);
-flex-wrap:wrap;
 gap:50px;
+flex-wrap:wrap;
+min-height:90vh;
 }
 
-.photo img{
-width:380px;
-max-width:100%;
-border-radius:20px;
+.photo{
+width:330px;
+border-radius:25px;
 border:3px solid gold;
-box-shadow:0 0 35px rgba(255,215,0,0.35);
+box-shadow:0 0 30px rgba(255,215,0,.45);
+animation:float 4s ease-in-out infinite;
 }
 
-.content{
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+}
+
+.box{
 max-width:650px;
 }
 
-.content h1{
-font-size:60px;
+.box h1{
+font-size:65px;
 color:gold;
-line-height:1.2;
-margin-bottom:15px;
+line-height:1.1;
+text-shadow:0 0 18px rgba(255,215,0,.45);
 }
 
-.content h2{
-font-size:34px;
-margin-bottom:20px;
+.box h2{
+font-size:38px;
+margin-top:10px;
+color:#fff;
 }
 
-.content p{
-font-size:24px;
-line-height:1.8;
-margin-bottom:10px;
+.typing{
+margin-top:18px;
+font-size:26px;
+color:#f5d26d;
+height:35px;
+font-weight:bold;
+}
+
+.box p{
+margin-top:22px;
+font-size:22px;
+line-height:1.7;
+color:#ddd;
+}
+
+.btns{
+margin-top:28px;
 }
 
 .btn{
 display:inline-block;
+padding:16px 32px;
 margin:10px 10px 0 0;
-padding:14px 28px;
 border:2px solid gold;
-border-radius:35px;
+border-radius:40px;
 color:gold;
 text-decoration:none;
-font-size:20px;
+font-size:22px;
 font-weight:bold;
-transition:0.3s;
+transition:.3s;
 }
 
 .btn:hover{
 background:gold;
-color:#000;
+color:black;
+transform:scale(1.05);
 }
 
-section{
-padding:80px 25px;
+.title{
 text-align:center;
-background:#111;
-border-top:1px solid #222;
-}
-
-section h2{
-font-size:42px;
+font-size:52px;
 color:gold;
-margin-bottom:30px;
+margin-bottom:45px;
 }
 
-section p{
-font-size:24px;
-max-width:1000px;
-margin:auto;
-line-height:1.9;
-}
-
-.cards{
+.grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
 gap:25px;
-margin-top:35px;
 }
 
 .card{
-background:#1b1b1b;
-padding:30px;
-border-radius:15px;
-border:1px solid gold;
-font-size:24px;
+padding:28px;
+border:2px solid gold;
+border-radius:20px;
+text-align:center;
+font-size:28px;
 font-weight:bold;
+background:rgba(255,255,255,.03);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px rgba(255,215,0,.35);
 }
 
 .contact{
-font-size:24px;
+text-align:center;
+font-size:26px;
 line-height:2;
 }
 
 iframe{
 width:100%;
 height:350px;
-border:none;
-border-radius:12px;
+border:0;
+border-radius:20px;
 margin-top:30px;
 }
 
-form{
-max-width:850px;
-margin:auto;
-margin-top:35px;
-}
-
-input,textarea{
-width:100%;
-padding:16px;
-margin:10px 0;
-font-size:20px;
-border:none;
-border-radius:8px;
-}
-
-button{
-padding:15px 28px;
-font-size:22px;
-background:gold;
-border:none;
-border-radius:30px;
-font-weight:bold;
-cursor:pointer;
-}
-
-button:hover{
-background:#fff;
-}
-
 footer{
-padding:25px;
 text-align:center;
-background:#000;
-color:#aaa;
+padding:25px;
 font-size:20px;
+border-top:1px solid gold;
+color:#aaa;
 }
 
 .whatsapp{
 position:fixed;
-right:20px;
 bottom:20px;
-background:#25D366;
-color:#fff;
-padding:15px 18px;
+right:20px;
+background:#25d366;
+color:white;
+font-size:34px;
+width:65px;
+height:65px;
+display:flex;
+justify-content:center;
+align-items:center;
 border-radius:50%;
-font-size:30px;
 text-decoration:none;
+box-shadow:0 0 18px rgba(0,255,0,.5);
 z-index:999;
 }
 
 @media(max-width:768px){
 
-.content h1{
-font-size:36px;
+.box h1{
+font-size:44px;
+text-align:center;
 }
 
-.content h2{
-font-size:24px;
+.box h2{
+font-size:26px;
+text-align:center;
 }
 
-.content p{
+.typing{
+text-align:center;
+font-size:20px;
+}
+
+.box p{
 font-size:18px;
+text-align:center;
+}
+
+.btns{
+text-align:center;
+}
+
+.photo{
+width:260px;
 }
 
 header a{
@@ -223,16 +252,8 @@ font-size:16px;
 margin:0 8px;
 }
 
-section h2{
-font-size:30px;
-}
-
-section p,.card,.contact{
-font-size:18px;
-}
-
-.photo img{
-width:280px;
+.title{
+font-size:38px;
 }
 }
 </style>
@@ -249,82 +270,99 @@ width:280px;
 
 <section class="hero" id="home">
 
-<div class="photo">
-<img src="passport size photo.jpg1.jpeg">
-</div>
+<img src="passport%20size%20photo.jpg1.jpeg" class="photo">
 
-<div class="content">
+<div class="box">
 <h1>Adv. Pratik Vikram Singh</h1>
 <h2>Advocate, High Court Lucknow Bench</h2>
 
-<p>Professional Legal Representation with Integrity, Dedication and Results.</p>
+<div class="typing" id="typing"></div>
 
-<p>📞 +91 8299436499</p>
-<p>📞 +91 7800043700</p>
+<p>
+Professional legal services with integrity, dedication and strategic results. 
+Specialized in Criminal, Civil, Bail, Property & High Court matters.
+</p>
 
+<div class="btns">
 <a href="tel:+918299436499" class="btn">Call Now</a>
 <a href="https://wa.me/918299436499" class="btn">WhatsApp</a>
-
 </div>
 
+</div>
 </section>
 
 <section id="about">
-<h2>About Advocate</h2>
+<h2 class="title">Why Choose Us</h2>
 
-<p>
-Adv. Pratik Vikram Singh is a practicing advocate associated with the High Court, Lucknow Bench. He provides strategic legal assistance in criminal matters, civil litigation, property disputes, bail matters and constitutional remedies with a professional and result-oriented approach.
-</p>
-
+<div class="grid">
+<div class="card">Trusted Legal Advice</div>
+<div class="card">Courtroom Experience</div>
+<div class="card">Fast Response</div>
+<div class="card">Result Oriented</div>
+</div>
 </section>
 
 <section id="practice">
-<h2>Practice Areas</h2>
+<h2 class="title">Practice Areas</h2>
 
-<div class="cards">
-
+<div class="grid">
 <div class="card">Criminal Law</div>
 <div class="card">Civil Cases</div>
-<div class="card">Property Disputes</div>
 <div class="card">Bail Matters</div>
+<div class="card">Property Disputes</div>
 <div class="card">High Court Cases</div>
 <div class="card">Legal Consultation</div>
-
 </div>
-
 </section>
 
 <section id="contact">
-
-<h2>Contact Office</h2>
+<h2 class="title">Contact Office</h2>
 
 <div class="contact">
-📞 +91 8299436499 / +91 7800043700<br>
-📧 advpratikvikramsingh@gmail.com<br>
-📍 B-10 Apoorva Vihar, Indira Nagar, Lucknow - 226028
+📞 +91 8299436499 <br>
+📞 +91 7800043700 <br>
+📍 B-10 Apoorva Vihar, Indira Nagar, Lucknow
 </div>
 
-<iframe src="https://maps.google.com/maps?q=Indira%20Nagar%20Lucknow&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-
-<form action="https://formsubmit.co/advpratikvikramsingh@gmail.com" method="POST">
-
-<input type="text" name="name" placeholder="Your Name" required>
-
-<input type="email" name="email" placeholder="Your Email" required>
-
-<textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-
-<button type="submit">Send Message</button>
-
-</form>
+<iframe src="https://maps.google.com/maps?q=Lucknow&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
 
 </section>
 
 <footer>
-© 2026 Adv. Pratik Vikram Singh | Advocate High Court Lucknow Bench
+© 2026 Adv. Pratik Vikram Singh | All Rights Reserved
 </footer>
 
 <a href="https://wa.me/918299436499" class="whatsapp">💬</a>
+
+<script>
+const texts=[
+"Criminal Lawyer",
+"High Court Advocate",
+"Civil & Property Expert",
+"Legal Consultation Available"
+];
+
+let count=0;
+let index=0;
+let currentText='';
+let letter='';
+
+(function type(){
+if(count===texts.length){count=0;}
+currentText=texts[count];
+letter=currentText.slice(0,++index);
+
+document.getElementById('typing').textContent=letter;
+
+if(letter.length===currentText.length){
+count++;
+index=0;
+setTimeout(type,1300);
+}else{
+setTimeout(type,90);
+}
+})();
+</script>
 
 </body>
 </html>
