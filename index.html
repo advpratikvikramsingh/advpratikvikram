@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Adv. Pratik Vikram Singh | Advocate High Court Lucknow Bench</title>
+<title>Adv. Pratik Vikram Singh | High Court Lucknow Bench Advocate</title>
 
-<meta name="description" content="Advocate Pratik Vikram Singh - High Court Lucknow Bench. Criminal, Civil, Bail, Property, Legal Consultation. Contact Now.">
-<meta name="keywords" content="Advocate Lucknow, High Court Lawyer Lucknow, Bail Lawyer, Civil Lawyer, Criminal Lawyer, Pratik Vikram Singh">
+<meta name="description" content="Adv. Pratik Vikram Singh - Advocate, High Court Lucknow Bench. Criminal, Civil, Bail, Property, Writ, Legal Consultation.">
+<meta name="keywords" content="Advocate Lucknow, High Court Lucknow Bench Lawyer, Criminal Lawyer Lucknow, Civil Lawyer, Bail Lawyer">
 <meta name="author" content="Adv. Pratik Vikram Singh">
 
 <style>
@@ -21,7 +21,7 @@ font-family:Georgia, serif;
 
 body{
 background:#050505;
-color:white;
+color:#fff;
 overflow-x:hidden;
 }
 
@@ -32,97 +32,116 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:linear-gradient(135deg,#000,#111,#1a1200,#000);
-background-size:400% 400%;
-animation:bgmove 12s ease infinite;
+background:
+radial-gradient(circle at top left,#3a2a00,transparent 35%),
+radial-gradient(circle at bottom right,#2a1a00,transparent 35%),
+linear-gradient(135deg,#000,#080808,#111,#000);
 z-index:-2;
+animation:bg 10s infinite alternate;
 }
 
-@keyframes bgmove{
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
+@keyframes bg{
+0%{filter:hue-rotate(0deg);}
+100%{filter:hue-rotate(20deg);}
 }
 
 header{
 position:sticky;
 top:0;
 z-index:999;
-background:rgba(0,0,0,0.92);
-padding:18px;
-border-bottom:1px solid gold;
-text-align:center;
+background:rgba(0,0,0,.92);
+backdrop-filter:blur(8px);
+padding:18px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid rgba(255,215,0,.4);
 }
 
-header a{
-color:gold;
-text-decoration:none;
-margin:0 18px;
-font-size:22px;
+.logo{
+font-size:28px;
 font-weight:bold;
+color:gold;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:25px;
+font-size:20px;
 transition:.3s;
 }
 
-header a:hover{
-color:white;
+nav a:hover{
+color:gold;
 }
 
 section{
-padding:60px 7%;
+padding:75px 7%;
 }
 
 .hero{
-display:flex;
-justify-content:center;
+display:grid;
+grid-template-columns:420px 1fr;
+gap:55px;
 align-items:center;
-gap:50px;
-flex-wrap:wrap;
-min-height:90vh;
+min-height:92vh;
+}
+
+.photo-wrap{
+position:relative;
 }
 
 .photo{
-width:330px;
-border-radius:25px;
+width:100%;
+border-radius:24px;
 border:3px solid gold;
-box-shadow:0 0 30px rgba(255,215,0,.45);
+box-shadow:0 0 35px rgba(255,215,0,.35);
 animation:float 4s ease-in-out infinite;
 }
 
 @keyframes float{
 0%,100%{transform:translateY(0);}
-50%{transform:translateY(-10px);}
+50%{transform:translateY(-12px);}
 }
 
-.box{
-max-width:650px;
-}
-
-.box h1{
-font-size:65px;
+.badge{
+position:absolute;
+bottom:15px;
+left:15px;
+background:rgba(0,0,0,.85);
+padding:12px 18px;
+border:1px solid gold;
+border-radius:30px;
+font-size:16px;
 color:gold;
-line-height:1.1;
-text-shadow:0 0 18px rgba(255,215,0,.45);
 }
 
-.box h2{
-font-size:38px;
-margin-top:10px;
-color:#fff;
+.hero h1{
+font-size:72px;
+line-height:1.05;
+color:gold;
+text-shadow:0 0 15px rgba(255,215,0,.25);
 }
 
-.typing{
-margin-top:18px;
-font-size:26px;
-color:#f5d26d;
-height:35px;
+.hero h2{
+font-size:42px;
+margin-top:12px;
+}
+
+.type{
+font-size:28px;
+color:#f3d46b;
+margin:18px 0;
 font-weight:bold;
+height:36px;
 }
 
-.box p{
-margin-top:22px;
-font-size:22px;
-line-height:1.7;
+.hero p{
+font-size:23px;
+line-height:1.8;
 color:#ddd;
+max-width:800px;
 }
 
 .btns{
@@ -131,50 +150,88 @@ margin-top:28px;
 
 .btn{
 display:inline-block;
-padding:16px 32px;
-margin:10px 10px 0 0;
+padding:16px 34px;
 border:2px solid gold;
 border-radius:40px;
-color:gold;
 text-decoration:none;
+color:gold;
 font-size:22px;
 font-weight:bold;
+margin:10px 14px 0 0;
 transition:.3s;
 }
 
 .btn:hover{
 background:gold;
-color:black;
-transform:scale(1.05);
+color:#000;
+transform:translateY(-4px);
+}
+
+.stats{
+margin-top:35px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+}
+
+.stat{
+padding:18px;
+border:1px solid rgba(255,215,0,.45);
+border-radius:18px;
+text-align:center;
+background:rgba(255,255,255,.03);
+}
+
+.stat h3{
+font-size:34px;
+color:gold;
+}
+
+.stat p{
+font-size:16px;
+margin-top:6px;
 }
 
 .title{
+font-size:54px;
 text-align:center;
-font-size:52px;
-color:gold;
 margin-bottom:45px;
+color:gold;
 }
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:24px;
 }
 
 .card{
-padding:28px;
-border:2px solid gold;
+padding:30px;
+border:1px solid rgba(255,215,0,.5);
 border-radius:20px;
+background:rgba(255,255,255,.03);
 text-align:center;
 font-size:28px;
 font-weight:bold;
-background:rgba(255,255,255,.03);
 transition:.3s;
 }
 
 .card:hover{
 transform:translateY(-8px);
-box-shadow:0 0 20px rgba(255,215,0,.35);
+box-shadow:0 0 25px rgba(255,215,0,.22);
+}
+
+.review{
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:28px;
+line-height:1.8;
+color:#eee;
+padding:35px;
+border:1px solid rgba(255,215,0,.4);
+border-radius:22px;
+background:rgba(255,255,255,.03);
 }
 
 .contact{
@@ -185,71 +242,71 @@ line-height:2;
 
 iframe{
 width:100%;
-height:350px;
+height:360px;
 border:0;
-border-radius:20px;
+border-radius:22px;
 margin-top:30px;
 }
 
 footer{
+padding:28px;
 text-align:center;
-padding:25px;
-font-size:20px;
-border-top:1px solid gold;
+border-top:1px solid rgba(255,215,0,.35);
+font-size:18px;
 color:#aaa;
 }
 
 .whatsapp{
 position:fixed;
-bottom:20px;
-right:20px;
+bottom:22px;
+right:22px;
+width:68px;
+height:68px;
+border-radius:50%;
 background:#25d366;
-color:white;
-font-size:34px;
-width:65px;
-height:65px;
 display:flex;
 justify-content:center;
 align-items:center;
-border-radius:50%;
+font-size:34px;
 text-decoration:none;
-box-shadow:0 0 18px rgba(0,255,0,.5);
+box-shadow:0 0 20px rgba(0,255,0,.45);
 z-index:999;
 }
 
-@media(max-width:768px){
+@media(max-width:980px){
 
-.box h1{
-font-size:44px;
+.hero{
+grid-template-columns:1fr;
 text-align:center;
 }
 
-.box h2{
-font-size:26px;
-text-align:center;
+.hero h1{
+font-size:48px;
 }
 
-.typing{
-text-align:center;
+.hero h2{
+font-size:28px;
+}
+
+.type{
 font-size:20px;
 }
 
-.box p{
+.hero p{
 font-size:18px;
-text-align:center;
 }
 
-.btns{
-text-align:center;
+.stats{
+grid-template-columns:1fr;
 }
 
-.photo{
-width:260px;
-}
-
-header a{
+nav a{
 font-size:16px;
-margin:0 8px;
+margin-left:12px;
+}
+
+.logo{
+font-size:20px;
 }
 
 .title{
@@ -262,25 +319,29 @@ font-size:38px;
 <body>
 
 <header>
+<div class="logo">⚖️ PVS Legal</div>
+<nav>
 <a href="#home">Home</a>
-<a href="#about">About</a>
 <a href="#practice">Practice</a>
+<a href="#reviews">Reviews</a>
 <a href="#contact">Contact</a>
+</nav>
 </header>
 
 <section class="hero" id="home">
 
+<div class="photo-wrap">
 <img src="passport%20size%20photo.jpg1.jpeg" class="photo">
+<div class="badge">High Court Lucknow Bench</div>
+</div>
 
-<div class="box">
+<div>
 <h1>Adv. Pratik Vikram Singh</h1>
 <h2>Advocate, High Court Lucknow Bench</h2>
-
-<div class="typing" id="typing"></div>
+<div class="type" id="type"></div>
 
 <p>
-Professional legal services with integrity, dedication and strategic results. 
-Specialized in Criminal, Civil, Bail, Property & High Court matters.
+Professional legal representation with strategic advocacy, disciplined preparation and result-oriented approach. Handling criminal, civil, bail, property, writ and consultation matters with dedication.
 </p>
 
 <div class="btns">
@@ -288,17 +349,23 @@ Specialized in Criminal, Civil, Bail, Property & High Court matters.
 <a href="https://wa.me/918299436499" class="btn">WhatsApp</a>
 </div>
 
+<div class="stats">
+<div class="stat">
+<h3>24x7</h3>
+<p>Client Support</p>
 </div>
-</section>
 
-<section id="about">
-<h2 class="title">Why Choose Us</h2>
+<div class="stat">
+<h3>Fast</h3>
+<p>Legal Response</p>
+</div>
 
-<div class="grid">
-<div class="card">Trusted Legal Advice</div>
-<div class="card">Courtroom Experience</div>
-<div class="card">Fast Response</div>
-<div class="card">Result Oriented</div>
+<div class="stat">
+<h3>Trust</h3>
+<p>Professional Ethics</p>
+</div>
+</div>
+
 </div>
 </section>
 
@@ -307,11 +374,21 @@ Specialized in Criminal, Civil, Bail, Property & High Court matters.
 
 <div class="grid">
 <div class="card">Criminal Law</div>
-<div class="card">Civil Cases</div>
+<div class="card">Civil Litigation</div>
 <div class="card">Bail Matters</div>
 <div class="card">Property Disputes</div>
+<div class="card">Writ Petitions</div>
 <div class="card">High Court Cases</div>
-<div class="card">Legal Consultation</div>
+<div class="card">Legal Notices</div>
+<div class="card">Consultation</div>
+</div>
+</section>
+
+<section id="reviews">
+<h2 class="title">Professional Commitment</h2>
+
+<div class="review">
+“Every matter receives focused preparation, confidentiality, professional conduct and dedicated legal strategy.”
 </div>
 </section>
 
@@ -329,40 +406,9 @@ Specialized in Criminal, Civil, Bail, Property & High Court matters.
 </section>
 
 <footer>
-© 2026 Adv. Pratik Vikram Singh | All Rights Reserved
+© 2026 Adv. Pratik Vikram Singh | Advocate High Court Lucknow Bench
 </footer>
 
 <a href="https://wa.me/918299436499" class="whatsapp">💬</a>
 
-<script>
-const texts=[
-"Criminal Lawyer",
-"High Court Advocate",
-"Civil & Property Expert",
-"Legal Consultation Available"
-];
-
-let count=0;
-let index=0;
-let currentText='';
-let letter='';
-
-(function type(){
-if(count===texts.length){count=0;}
-currentText=texts[count];
-letter=currentText.slice(0,++index);
-
-document.getElementById('typing').textContent=letter;
-
-if(letter.length===currentText.length){
-count++;
-index=0;
-setTimeout(type,1300);
-}else{
-setTimeout(type,90);
-}
-})();
-</script>
-
-</body>
-</html>
+<script
