@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Adv. Pratik Vikram Singh | High Court Lucknow Bench Advocate</title>
+<title>PVS Legal | Adv. Pratik Vikram Singh | High Court Lucknow Bench</title>
 
-<meta name="description" content="Adv. Pratik Vikram Singh - Advocate, High Court Lucknow Bench. Criminal, Civil, Bail, Property, Writ, Legal Consultation.">
-<meta name="keywords" content="Advocate Lucknow, High Court Lucknow Bench Lawyer, Criminal Lawyer Lucknow, Civil Lawyer, Bail Lawyer">
+<meta name="description" content="PVS Legal - Adv. Pratik Vikram Singh, Advocate High Court Lucknow Bench. Criminal, Civil, Bail, Writ, Property & Consultation Matters.">
+<meta name="keywords" content="Lucknow Advocate, High Court Lawyer Lucknow, Criminal Lawyer Lucknow, Bail Lawyer, PVS Legal">
 <meta name="author" content="Adv. Pratik Vikram Singh">
 
 <style>
@@ -16,16 +16,16 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 scroll-behavior:smooth;
-font-family:Georgia, serif;
+font-family:Georgia,serif;
 }
 
 body{
-background:#050505;
+background:#040404;
 color:#fff;
 overflow-x:hidden;
 }
 
-body::before{
+body:before{
 content:'';
 position:fixed;
 top:0;
@@ -33,42 +33,43 @@ left:0;
 width:100%;
 height:100%;
 background:
-radial-gradient(circle at top left,#3a2a00,transparent 35%),
-radial-gradient(circle at bottom right,#2a1a00,transparent 35%),
+radial-gradient(circle at top left,#4a3200,transparent 25%),
+radial-gradient(circle at bottom right,#3b2600,transparent 25%),
 linear-gradient(135deg,#000,#080808,#111,#000);
 z-index:-2;
-animation:bg 10s infinite alternate;
+animation:bgmove 8s infinite alternate;
 }
 
-@keyframes bg{
-0%{filter:hue-rotate(0deg);}
-100%{filter:hue-rotate(20deg);}
+@keyframes bgmove{
+0%{transform:scale(1);}
+100%{transform:scale(1.08);}
 }
 
 header{
 position:sticky;
 top:0;
 z-index:999;
-background:rgba(0,0,0,.92);
-backdrop-filter:blur(8px);
-padding:18px 5%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-border-bottom:1px solid rgba(255,215,0,.4);
+padding:18px 6%;
+background:rgba(0,0,0,.92);
+backdrop-filter:blur(10px);
+border-bottom:1px solid rgba(255,215,0,.35);
 }
 
 .logo{
-font-size:28px;
+font-size:30px;
 font-weight:bold;
 color:gold;
+letter-spacing:1px;
 }
 
 nav a{
 color:#fff;
 text-decoration:none;
-margin-left:25px;
-font-size:20px;
+margin-left:24px;
+font-size:19px;
 transition:.3s;
 }
 
@@ -77,71 +78,71 @@ color:gold;
 }
 
 section{
-padding:75px 7%;
+padding:80px 7%;
 }
 
 .hero{
 display:grid;
 grid-template-columns:420px 1fr;
-gap:55px;
+gap:60px;
 align-items:center;
-min-height:92vh;
+min-height:95vh;
 }
 
-.photo-wrap{
+.photo-box{
 position:relative;
 }
 
 .photo{
 width:100%;
-border-radius:24px;
+border-radius:25px;
 border:3px solid gold;
-box-shadow:0 0 35px rgba(255,215,0,.35);
+box-shadow:0 0 35px rgba(255,215,0,.3);
 animation:float 4s ease-in-out infinite;
 }
 
 @keyframes float{
 0%,100%{transform:translateY(0);}
-50%{transform:translateY(-12px);}
+50%{transform:translateY(-10px);}
 }
 
-.badge{
+.tag{
 position:absolute;
 bottom:15px;
 left:15px;
-background:rgba(0,0,0,.85);
-padding:12px 18px;
+padding:10px 18px;
+background:#000;
 border:1px solid gold;
 border-radius:30px;
-font-size:16px;
 color:gold;
+font-size:15px;
 }
 
 .hero h1{
-font-size:72px;
+font-size:74px;
 line-height:1.05;
 color:gold;
-text-shadow:0 0 15px rgba(255,215,0,.25);
+text-shadow:0 0 18px rgba(255,215,0,.25);
 }
 
 .hero h2{
-font-size:42px;
-margin-top:12px;
+font-size:40px;
+margin-top:10px;
 }
 
 .type{
-font-size:28px;
-color:#f3d46b;
-margin:18px 0;
-font-weight:bold;
+font-size:27px;
+color:#f2d26c;
+margin:16px 0;
 height:36px;
+font-weight:bold;
 }
 
 .hero p{
-font-size:23px;
+font-size:22px;
 line-height:1.8;
 color:#ddd;
-max-width:800px;
+max-width:780px;
 }
 
 .btns{
@@ -168,10 +169,10 @@ transform:translateY(-4px);
 }
 
 .stats{
-margin-top:35px;
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:18px;
+margin-top:32px;
 }
 
 .stat{
@@ -187,83 +188,106 @@ font-size:34px;
 color:gold;
 }
 
-.stat p{
-font-size:16px;
-margin-top:6px;
-}
-
 .title{
-font-size:54px;
+font-size:52px;
 text-align:center;
-margin-bottom:45px;
 color:gold;
+margin-bottom:45px;
 }
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 gap:24px;
 }
 
 .card{
-padding:30px;
-border:1px solid rgba(255,215,0,.5);
+padding:28px;
+border:1px solid rgba(255,215,0,.45);
 border-radius:20px;
-background:rgba(255,255,255,.03);
 text-align:center;
-font-size:28px;
+font-size:26px;
 font-weight:bold;
+background:rgba(255,255,255,.03);
 transition:.3s;
 }
 
 .card:hover{
 transform:translateY(-8px);
-box-shadow:0 0 25px rgba(255,215,0,.22);
+box-shadow:0 0 25px rgba(255,215,0,.18);
 }
 
-.review{
-max-width:900px;
+.review-slider{
+max-width:950px;
 margin:auto;
-text-align:center;
-font-size:28px;
-line-height:1.8;
-color:#eee;
 padding:35px;
 border:1px solid rgba(255,215,0,.4);
-border-radius:22px;
+border-radius:24px;
+font-size:28px;
+line-height:1.8;
+text-align:center;
 background:rgba(255,255,255,.03);
+min-height:180px;
+}
+
+.form{
+max-width:850px;
+margin:auto;
+display:grid;
+gap:18px;
+}
+
+.form input,.form textarea{
+padding:18px;
+font-size:20px;
+border-radius:14px;
+border:1px solid gold;
+background:#111;
+color:white;
+outline:none;
+}
+
+.form button{
+padding:18px;
+font-size:22px;
+background:gold;
+color:#000;
+border:none;
+border-radius:14px;
+font-weight:bold;
+cursor:pointer;
 }
 
 .contact{
 text-align:center;
-font-size:26px;
+font-size:25px;
 line-height:2;
+margin-bottom:25px;
 }
 
 iframe{
 width:100%;
-height:360px;
+height:350px;
 border:0;
 border-radius:22px;
-margin-top:30px;
 }
 
 footer{
-padding:28px;
+padding:26px;
 text-align:center;
-border-top:1px solid rgba(255,215,0,.35);
 font-size:18px;
 color:#aaa;
+border-top:1px solid rgba(255,215,0,.35);
 }
 
 .whatsapp{
 position:fixed;
-bottom:22px;
-right:22px;
+right:20px;
+bottom:20px;
 width:68px;
 height:68px;
-border-radius:50%;
 background:#25d366;
+border-radius:50%;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -271,6 +295,27 @@ font-size:34px;
 text-decoration:none;
 box-shadow:0 0 20px rgba(0,255,0,.45);
 z-index:999;
+}
+
+.popup{
+position:fixed;
+bottom:110px;
+right:20px;
+background:#111;
+border:1px solid gold;
+padding:18px;
+border-radius:18px;
+max-width:260px;
+display:none;
+z-index:999;
+}
+
+.popup a{
+display:block;
+margin-top:10px;
+color:gold;
+text-decoration:none;
+font-weight:bold;
 }
 
 @media(max-width:980px){
@@ -281,15 +326,11 @@ text-align:center;
 }
 
 .hero h1{
-font-size:48px;
+font-size:46px;
 }
 
 .hero h2{
 font-size:28px;
-}
-
-.type{
-font-size:20px;
 }
 
 .hero p{
@@ -301,12 +342,12 @@ grid-template-columns:1fr;
 }
 
 nav a{
-font-size:16px;
-margin-left:12px;
+font-size:15px;
+margin-left:10px;
 }
 
 .logo{
-font-size:20px;
+font-size:22px;
 }
 
 .title{
@@ -319,20 +360,21 @@ font-size:38px;
 <body>
 
 <header>
-<div class="logo">⚖️ PVS Legal</div>
+<div class="logo">⚖ PVS Legal</div>
 <nav>
 <a href="#home">Home</a>
 <a href="#practice">Practice</a>
 <a href="#reviews">Reviews</a>
+<a href="#booking">Book</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
 <section class="hero" id="home">
 
-<div class="photo-wrap">
+<div class="photo-box">
 <img src="passport%20size%20photo.jpg1.jpeg" class="photo">
-<div class="badge">High Court Lucknow Bench</div>
+<div class="tag">High Court Lucknow Bench</div>
 </div>
 
 <div>
@@ -341,7 +383,7 @@ font-size:38px;
 <div class="type" id="type"></div>
 
 <p>
-Professional legal representation with strategic advocacy, disciplined preparation and result-oriented approach. Handling criminal, civil, bail, property, writ and consultation matters with dedication.
+Dedicated legal representation with strategic advocacy, disciplined preparation and professional integrity. Trusted assistance in criminal, civil, bail, writ, property and consultation matters.
 </p>
 
 <div class="btns">
@@ -350,28 +392,15 @@ Professional legal representation with strategic advocacy, disciplined preparati
 </div>
 
 <div class="stats">
-<div class="stat">
-<h3>24x7</h3>
-<p>Client Support</p>
+<div class="stat"><h3>24x7</h3><p>Support</p></div>
+<div class="stat"><h3>Fast</h3><p>Response</p></div>
+<div class="stat"><h3>Trust</h3><p>Ethics</p></div>
 </div>
-
-<div class="stat">
-<h3>Fast</h3>
-<p>Legal Response</p>
-</div>
-
-<div class="stat">
-<h3>Trust</h3>
-<p>Professional Ethics</p>
-</div>
-</div>
-
 </div>
 </section>
 
 <section id="practice">
 <h2 class="title">Practice Areas</h2>
-
 <div class="grid">
 <div class="card">Criminal Law</div>
 <div class="card">Civil Litigation</div>
@@ -385,11 +414,23 @@ Professional legal representation with strategic advocacy, disciplined preparati
 </section>
 
 <section id="reviews">
-<h2 class="title">Professional Commitment</h2>
-
-<div class="review">
-“Every matter receives focused preparation, confidentiality, professional conduct and dedicated legal strategy.”
+<h2 class="title">Client Confidence</h2>
+<div class="review-slider" id="review">
+Professional legal guidance with dedication and timely response.
 </div>
+</section>
+
+<section id="booking">
+<h2 class="title">Book Consultation</h2>
+
+<form class="form" action="https://formsubmit.co/advpratikvikramsingh@gmail.com" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="text" name="phone" placeholder="Mobile Number" required>
+<input type="email" name="email" placeholder="Email Address">
+<textarea name="message" rows="5" placeholder="Write your legal issue"></textarea>
+<button type="submit">Request Appointment</button>
+</form>
+
 </section>
 
 <section id="contact">
@@ -406,9 +447,56 @@ Professional legal representation with strategic advocacy, disciplined preparati
 </section>
 
 <footer>
-© 2026 Adv. Pratik Vikram Singh | Advocate High Court Lucknow Bench
+© 2026 PVS Legal | Adv. Pratik Vikram Singh
 </footer>
+
+<div class="popup" id="popup">
+Need urgent legal help?<br>
+<a href="tel:+918299436499">📞 Call Now</a>
+<a href="https://wa.me/918299436499">💬 WhatsApp</a>
+</div>
 
 <a href="https://wa.me/918299436499" class="whatsapp">💬</a>
 
-<script
+<script>
+const words=[
+"Criminal Defense Counsel",
+"High Court Legal Representation",
+"Civil & Property Matters",
+"Trusted Consultation Available"
+];
+
+let i=0,j=0,del=false,current='';
+
+function type(){
+current=words[i];
+if(!del){
+document.getElementById("type").innerHTML=current.substring(0,j++);
+if(j>current.length){del=true;setTimeout(type,1200);return;}
+}else{
+document.getElementById("type").innerHTML=current.substring(0,j--);
+if(j<0){del=false;i=(i+1)%words.length;}
+}
+setTimeout(type,del?40:80);
+}
+type();
+
+const reviews=[
+"Professional legal guidance with dedication and timely response.",
+"Clear advice, prompt communication and client-focused approach.",
+"Strong preparation with ethical and disciplined representation."
+];
+
+let r=0;
+setInterval(()=>{
+document.getElementById("review").innerHTML=reviews[r];
+r=(r+1)%reviews.length;
+},3000);
+
+setTimeout(()=>{
+document.getElementById("popup").style.display="block";
+},15000);
+</script>
+
+</body>
+</html>
