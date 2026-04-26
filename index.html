@@ -5,14 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Adv. Pratik Vikram Singh | Advocate High Court Lucknow Bench</title>
-<meta name="description" content="Advocate Pratik Vikram Singh, High Court Lucknow Bench. Legal services in Criminal Law, Civil Cases, Property Disputes, High Court Matters and Legal Consultation.">
-<meta name="keywords" content="Advocate Lucknow, High Court Lawyer Lucknow, Pratik Vikram Singh, Criminal Lawyer Lucknow, Civil Lawyer Lucknow">
-<meta name="author" content="Adv. Pratik Vikram Singh">
 
-<meta property="og:title" content="Adv. Pratik Vikram Singh">
-<meta property="og:description" content="Advocate High Court Lucknow Bench">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://advpratikvikramsingh.github.io/advpratikvikram/">
+<meta name="description" content="Adv. Pratik Vikram Singh, Advocate High Court Lucknow Bench. Criminal, Civil, Property, Bail and High Court legal services in Lucknow.">
+
+<meta name="keywords" content="Advocate Lucknow, High Court Lawyer Lucknow, Criminal Lawyer Lucknow, Civil Lawyer Lucknow, Pratik Vikram Singh">
 
 <link rel="canonical" href="https://advpratikvikramsingh.github.io/advpratikvikram/">
 
@@ -25,17 +21,19 @@ scroll-behavior:smooth;
 }
 
 body{
-font-family:Georgia, serif;
+font-family:Georgia,serif;
 background:#000;
 color:#fff;
 }
 
 header{
-background:#111;
-padding:18px;
-text-align:center;
-position:sticky;
+position:fixed;
 top:0;
+width:100%;
+padding:18px;
+background:rgba(0,0,0,0.8);
+backdrop-filter:blur(10px);
+text-align:center;
 z-index:1000;
 border-bottom:1px solid gold;
 }
@@ -44,58 +42,60 @@ header a{
 color:gold;
 text-decoration:none;
 margin:0 18px;
-font-size:22px;
+font-size:20px;
 font-weight:bold;
 }
 
 .hero{
 min-height:100vh;
-background:url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1400&q=80');
-background-size:cover;
-background-position:center;
 display:flex;
 justify-content:center;
 align-items:center;
-padding:20px;
+padding:100px 30px 40px;
+background:linear-gradient(135deg,#000,#111,#1a1a1a);
+flex-wrap:wrap;
+gap:50px;
 }
 
-.box{
-background:rgba(0,0,0,0.75);
-padding:45px;
-border:2px solid gold;
-border-radius:18px;
-max-width:900px;
-width:100%;
-text-align:center;
-box-shadow:0 0 25px rgba(255,215,0,0.3);
+.photo img{
+width:380px;
+max-width:100%;
+border-radius:20px;
+border:3px solid gold;
+box-shadow:0 0 35px rgba(255,215,0,0.35);
 }
 
-.box h1{
-font-size:58px;
+.content{
+max-width:650px;
+}
+
+.content h1{
+font-size:60px;
 color:gold;
+line-height:1.2;
 margin-bottom:15px;
 }
 
-.box h2{
+.content h2{
 font-size:34px;
-margin-bottom:25px;
-color:#fff;
+margin-bottom:20px;
 }
 
-.box p{
+.content p{
 font-size:24px;
-margin:10px 0;
+line-height:1.8;
+margin-bottom:10px;
 }
 
 .btn{
 display:inline-block;
-margin:12px;
+margin:10px 10px 0 0;
 padding:14px 28px;
 border:2px solid gold;
-border-radius:30px;
+border-radius:35px;
 color:gold;
 text-decoration:none;
-font-size:22px;
+font-size:20px;
 font-weight:bold;
 transition:0.3s;
 }
@@ -106,7 +106,7 @@ color:#000;
 }
 
 section{
-padding:70px 20px;
+padding:80px 25px;
 text-align:center;
 background:#111;
 border-top:1px solid #222;
@@ -115,41 +115,52 @@ border-top:1px solid #222;
 section h2{
 font-size:42px;
 color:gold;
-margin-bottom:25px;
+margin-bottom:30px;
 }
 
 section p{
+font-size:24px;
 max-width:1000px;
 margin:auto;
-font-size:24px;
-line-height:1.8;
+line-height:1.9;
 }
 
-.practice{
-font-size:28px;
-line-height:2;
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:35px;
+}
+
+.card{
+background:#1b1b1b;
+padding:30px;
+border-radius:15px;
+border:1px solid gold;
+font-size:24px;
+font-weight:bold;
 }
 
 .contact{
-font-size:26px;
+font-size:24px;
 line-height:2;
 }
 
 iframe{
 width:100%;
 height:350px;
-border:0;
-margin-top:25px;
-border-radius:10px;
-}
-
-form{
-max-width:900px;
-margin:auto;
+border:none;
+border-radius:12px;
 margin-top:30px;
 }
 
-input, textarea{
+form{
+max-width:850px;
+margin:auto;
+margin-top:35px;
+}
+
+input,textarea{
 width:100%;
 padding:16px;
 margin:10px 0;
@@ -159,13 +170,13 @@ border-radius:8px;
 }
 
 button{
-padding:15px 30px;
+padding:15px 28px;
 font-size:22px;
 background:gold;
 border:none;
 border-radius:30px;
-cursor:pointer;
 font-weight:bold;
+cursor:pointer;
 }
 
 button:hover{
@@ -173,19 +184,19 @@ background:#fff;
 }
 
 footer{
-background:#000;
-text-align:center;
 padding:25px;
-font-size:20px;
+text-align:center;
+background:#000;
 color:#aaa;
+font-size:20px;
 }
 
 .whatsapp{
 position:fixed;
-bottom:20px;
 right:20px;
+bottom:20px;
 background:#25D366;
-color:white;
+color:#fff;
 padding:15px 18px;
 border-radius:50%;
 font-size:30px;
@@ -195,20 +206,20 @@ z-index:999;
 
 @media(max-width:768px){
 
-.box h1{
-font-size:34px;
+.content h1{
+font-size:36px;
 }
 
-.box h2{
-font-size:22px;
+.content h2{
+font-size:24px;
 }
 
-.box p{
+.content p{
 font-size:18px;
 }
 
 header a{
-font-size:18px;
+font-size:16px;
 margin:0 8px;
 }
 
@@ -216,13 +227,12 @@ section h2{
 font-size:30px;
 }
 
-section p,.practice,.contact{
+section p,.card,.contact{
 font-size:18px;
 }
 
-.btn{
-font-size:18px;
-padding:12px 20px;
+.photo img{
+width:280px;
 }
 }
 </style>
@@ -233,47 +243,60 @@ padding:12px 20px;
 <header>
 <a href="#home">Home</a>
 <a href="#about">About</a>
-<a href="#practice">Practice Areas</a>
+<a href="#practice">Practice</a>
 <a href="#contact">Contact</a>
 </header>
 
-<div class="hero" id="home">
-<div class="box">
-<h1>Adv. Pratik Vikram Singh</h1>
-<h2>Advocate, High Court, Lucknow Bench</h2>
+<section class="hero" id="home">
 
-<p>📞 Mobile: +91 8299436499</p>
-<p>📞 Alternate: +91 7800043700</p>
+<div class="photo">
+<img src="passport size photo.jpg1.jpeg">
+</div>
+
+<div class="content">
+<h1>Adv. Pratik Vikram Singh</h1>
+<h2>Advocate, High Court Lucknow Bench</h2>
+
+<p>Professional Legal Representation with Integrity, Dedication and Results.</p>
+
+<p>📞 +91 8299436499</p>
+<p>📞 +91 7800043700</p>
 
 <a href="tel:+918299436499" class="btn">Call Now</a>
 <a href="https://wa.me/918299436499" class="btn">WhatsApp</a>
-</div>
+
 </div>
 
+</section>
+
 <section id="about">
-<h2>About</h2>
+<h2>About Advocate</h2>
+
 <p>
-Adv. Pratik Vikram Singh is a practicing advocate at the High Court, Lucknow Bench. 
-He provides dedicated legal assistance with professionalism, ethics and result-oriented advocacy.
-Special focus includes Criminal Matters, Civil Litigation, Property Disputes, High Court Cases and Legal Consultation.
+Adv. Pratik Vikram Singh is a practicing advocate associated with the High Court, Lucknow Bench. He provides strategic legal assistance in criminal matters, civil litigation, property disputes, bail matters and constitutional remedies with a professional and result-oriented approach.
 </p>
+
 </section>
 
 <section id="practice">
 <h2>Practice Areas</h2>
-<div class="practice">
-Criminal Law<br>
-Civil Cases<br>
-Property Disputes<br>
-High Court Matters<br>
-Legal Notices<br>
-Bail Matters<br>
-Consultation
+
+<div class="cards">
+
+<div class="card">Criminal Law</div>
+<div class="card">Civil Cases</div>
+<div class="card">Property Disputes</div>
+<div class="card">Bail Matters</div>
+<div class="card">High Court Cases</div>
+<div class="card">Legal Consultation</div>
+
 </div>
+
 </section>
 
 <section id="contact">
-<h2>Contact</h2>
+
+<h2>Contact Office</h2>
 
 <div class="contact">
 📞 +91 8299436499 / +91 7800043700<br>
@@ -284,10 +307,15 @@ Consultation
 <iframe src="https://maps.google.com/maps?q=Indira%20Nagar%20Lucknow&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
 
 <form action="https://formsubmit.co/advpratikvikramsingh@gmail.com" method="POST">
+
 <input type="text" name="name" placeholder="Your Name" required>
+
 <input type="email" name="email" placeholder="Your Email" required>
+
 <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
 <button type="submit">Send Message</button>
+
 </form>
 
 </section>
@@ -296,7 +324,7 @@ Consultation
 © 2026 Adv. Pratik Vikram Singh | Advocate High Court Lucknow Bench
 </footer>
 
-<a class="whatsapp" href="https://wa.me/918299436499">💬</a>
+<a href="https://wa.me/918299436499" class="whatsapp">💬</a>
 
 </body>
 </html>
